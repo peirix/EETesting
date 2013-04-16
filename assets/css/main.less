@@ -99,7 +99,7 @@ header {
 	height: 100%;
 	top: 100%;
 	position: relative;
-	background: #fafafa;
+	background: @background;
 	border: 1px solid red;
 }
 
@@ -109,7 +109,7 @@ header {
 	top: 10%;
 	width: 80%;
 	left: 10%;
-	z-index: 2;
+	z-index: 5;
 
 	&.fixed {
 		position: fixed;
@@ -123,7 +123,11 @@ header {
 	}
 }
 
-.page .content {
+.product {
+	z-index: 3;
+}
+
+.product .content {
 	position: absolute;
 	color: @text;
 	z-index: 3;
@@ -161,4 +165,46 @@ header {
 .p4 .content {
 	top: 60%;
 	left: 5%;
+}
+
+
+//STORY
+.story {
+	background: transparent;
+
+	.imageWrapper {
+		position: fixed;
+		top: 0;
+		display: none;
+		z-index: 0;
+	}
+
+	.content {
+		height: 10%;
+		margin-top: 90%;
+		background: @background;
+		text-align: center;
+		color: @text;
+		position: relative;
+		z-index: 3;
+
+		h2 {
+			position: relative;
+			margin-bottom: 40px;
+
+			&:after {
+				content: "";
+				position: absolute;
+				width: 40px;
+				margin-left: -20px;
+				bottom: -20px;
+				left: 50%;
+				border-bottom: 1px solid @text;
+			}
+		}
+		p {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
 }
