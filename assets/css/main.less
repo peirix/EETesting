@@ -4,9 +4,7 @@
 	box-sizing: border-box;
 }
 
-body,html {
-	height: 100%;
-}
+body,html {	height: 100%; }
 
 header {
 	position: absolute;
@@ -100,7 +98,9 @@ header {
 	top: 100%;
 	position: relative;
 	background: @background;
-	border: 1px solid red;
+
+	h2 { font-size: 2.3em; line-height: 2em; }
+	p { font-size: 1em; line-height: 1.2em; }
 }
 
 #productImage {
@@ -109,22 +109,19 @@ header {
 	top: 10%;
 	width: 80%;
 	left: 10%;
-	z-index: 5;
+	z-index: 2;
 
 	&.fixed {
 		position: fixed;
 		margin-top: 50px;
 	}
+	&.bottom { top: 310%; }
 
 	img {
 		max-width: 100%;
 		display: block;
 		margin: 0 auto;
 	}
-}
-
-.product {
-	z-index: 3;
 }
 
 .product .content {
@@ -171,22 +168,30 @@ header {
 //STORY
 .story {
 	background: transparent;
+	z-index: 6;
+	overflow: hidden;
 
 	.imageWrapper {
 		position: fixed;
-		top: 0;
+		top: 50px;
+		overflow: hidden;
 		display: none;
-		z-index: 0;
+		width: 100%;
+		left: 0;
+		height: 0;
+
+		img { width: 100%; }
 	}
 
 	.content {
-		height: 10%;
-		margin-top: 90%;
+		height: 30%;
+		top: 70%;
 		background: @background;
 		text-align: center;
 		color: @text;
 		position: relative;
-		z-index: 3;
+		z-index: 7;
+		padding-top: 2%;
 
 		h2 {
 			position: relative;
@@ -205,6 +210,93 @@ header {
 		p {
 			width: 50%;
 			margin: 0 auto;
+		}
+	}
+}
+
+#story2 { z-index: 5; }
+#story3 { z-index: 4; }
+#story4 { z-index: 3; }
+
+footer {
+	background: #d94029;
+	height: 200px;
+	bottom: -200px;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	color: #fff;
+	z-index: 99;
+
+	&.show {
+		.transition(bottom 0.5s, 0.5s);
+		bottom : 0;
+	}
+
+	a,a:visited,a:hover { color: #fff; }
+	.phone { cursor: default; }
+}
+#fakeFooter {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	top: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+	header {
+		height: auto;
+		h1 {
+			float: none;
+			width: 100%;
+			left: 0;
+			position: relative;
+			text-align: center;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+			line-height: 15px;
+		}
+
+		nav ul {
+			height: auto;
+
+			li { margin: 0 10px 7px; }
+		}
+
+		.pull-right { display: none; }
+	}
+
+	#intro {
+		h2 {
+			line-height: 1em;
+		}
+	}
+
+	.page {
+		font-size: 0.9em;
+
+		h2 {
+			font-size: 2em;
+			line-height: 1em;
+			margin-bottom: 1em;
+		}
+	}
+
+	.product .content {
+		top: auto;
+		bottom: 5%;
+	}
+
+	.story {
+		.imageWrapper { top: 76px; }
+		.content {
+			top: 50%;
+			height: 50%;
+
+			p { width: 80%; }
 		}
 	}
 }

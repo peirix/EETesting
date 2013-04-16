@@ -10,3 +10,11 @@
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=@img, sizingMethod='scale');
 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=@{img}, sizingMethod='scale')";
 }
+
+.transition (@args, @sec) {
+	-webkit-transition: @args, -webkit-transform @sec;
+	   -moz-transition: @args,    -moz-transform @sec;
+	    -ms-transition: @args,     -ms-transform @sec;
+	     -o-transition: @args,      -o-transform @sec;
+	        transition: @args,         transform @sec;
+}
