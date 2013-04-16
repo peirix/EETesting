@@ -1,0 +1,19 @@
+/**
+ * Dukt Videos
+ *
+ * @package		Dukt Videos
+ * @version		Version 1.0.2
+ * @author		Benjamin David
+ * @copyright	Copyright (c) 2013 - DUKT
+ * @link		http://dukt.net/add-ons/expressionengine/dukt-videos/
+ *
+ */
+.dv-box {
+  display: none;
+  position: fixed;
+  width: 860px;
+  height: 568px;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}

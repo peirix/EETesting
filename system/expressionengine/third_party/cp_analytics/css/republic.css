@@ -1,0 +1,51 @@
+.analytics-panel th {
+	background: #DDD;
+	color: #333;
+}
+
+.analytics-panel td {
+	background: #fff;
+	border-color: #DDD;		
+	color: #333;
+}
+
+.analytics-stat, .analytics-stat-col {
+	color: #333;
+	text-shadow: 0 1px 0 #eee;
+}
+
+#cp_analytics_chart_container {
+	background: #FFFFFF;
+	margin: 0 3.3%;
+	padding: 10px;
+	-moz-box-shadow: rgb(238, 238, 238) 0px 2px 2px 0px !important;
+	-o-box-shadow: rgb(238, 238, 238) 0px 2px 2px 0px !important;
+	-webkit-box-shadow: rgb(238, 238, 238) 0px 2px 2px 0px !important;
+	box-shadow: rgb(238, 238, 238) 0px 2px 2px 0px !important;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;	
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding;
+	-o-background-clip:padding-box;
+	-ms-background-clip:padding-box;
+	-khtml-background-clip:padding-box;
+	background-clip:padding-box;
+}
+
+#cp_analytics_chart {
+	background: #FFFFFF;
+}
+
+@media all and (max-width: 768px), all and (max-device-width: 768px) {
+
+#cp_analytics_chart_container {
+	margin: 0 2%;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+	
+}

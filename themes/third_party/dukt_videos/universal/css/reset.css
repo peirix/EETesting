@@ -1,0 +1,144 @@
+/**
+ * Dukt Videos
+ *
+ * @package		Dukt Videos
+ * @version		Version 1.0
+ * @author		Benjamin David
+ * @copyright	Copyright (c) 2013 - DUKT
+ * @link		http://dukt.net/videos/
+ *
+ */
+.dukt-videos-box > * {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+  /* HTML5 display-role reset for older browsers */
+
+}
+.dukt-videos-box > * html,
+.dukt-videos-box > * body,
+.dukt-videos-box > * div,
+.dukt-videos-box > * span,
+.dukt-videos-box > * applet,
+.dukt-videos-box > * object,
+.dukt-videos-box > * iframe,
+.dukt-videos-box > * h1,
+.dukt-videos-box > * h2,
+.dukt-videos-box > * h3,
+.dukt-videos-box > * h4,
+.dukt-videos-box > * h5,
+.dukt-videos-box > * h6,
+.dukt-videos-box > * p,
+.dukt-videos-box > * blockquote,
+.dukt-videos-box > * pre,
+.dukt-videos-box > * a,
+.dukt-videos-box > * abbr,
+.dukt-videos-box > * acronym,
+.dukt-videos-box > * address,
+.dukt-videos-box > * big,
+.dukt-videos-box > * cite,
+.dukt-videos-box > * code,
+.dukt-videos-box > * del,
+.dukt-videos-box > * dfn,
+.dukt-videos-box > * em,
+.dukt-videos-box > * img,
+.dukt-videos-box > * ins,
+.dukt-videos-box > * kbd,
+.dukt-videos-box > * q,
+.dukt-videos-box > * s,
+.dukt-videos-box > * samp,
+.dukt-videos-box > * small,
+.dukt-videos-box > * strike,
+.dukt-videos-box > * strong,
+.dukt-videos-box > * sub,
+.dukt-videos-box > * sup,
+.dukt-videos-box > * tt,
+.dukt-videos-box > * var,
+.dukt-videos-box > * b,
+.dukt-videos-box > * u,
+.dukt-videos-box > * i,
+.dukt-videos-box > * center,
+.dukt-videos-box > * dl,
+.dukt-videos-box > * dt,
+.dukt-videos-box > * dd,
+.dukt-videos-box > * ol,
+.dukt-videos-box > * ul,
+.dukt-videos-box > * li,
+.dukt-videos-box > * fieldset,
+.dukt-videos-box > * form,
+.dukt-videos-box > * label,
+.dukt-videos-box > * legend,
+.dukt-videos-box > * table,
+.dukt-videos-box > * caption,
+.dukt-videos-box > * tbody,
+.dukt-videos-box > * tfoot,
+.dukt-videos-box > * thead,
+.dukt-videos-box > * tr,
+.dukt-videos-box > * th,
+.dukt-videos-box > * td,
+.dukt-videos-box > * article,
+.dukt-videos-box > * aside,
+.dukt-videos-box > * canvas,
+.dukt-videos-box > * details,
+.dukt-videos-box > * embed,
+.dukt-videos-box > * figure,
+.dukt-videos-box > * figcaption,
+.dukt-videos-box > * footer,
+.dukt-videos-box > * header,
+.dukt-videos-box > * hgroup,
+.dukt-videos-box > * menu,
+.dukt-videos-box > * nav,
+.dukt-videos-box > * output,
+.dukt-videos-box > * ruby,
+.dukt-videos-box > * section,
+.dukt-videos-box > * summary,
+.dukt-videos-box > * time,
+.dukt-videos-box > * mark,
+.dukt-videos-box > * audio,
+.dukt-videos-box > * video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.dukt-videos-box > * article,
+.dukt-videos-box > * aside,
+.dukt-videos-box > * details,
+.dukt-videos-box > * figcaption,
+.dukt-videos-box > * figure,
+.dukt-videos-box > * footer,
+.dukt-videos-box > * header,
+.dukt-videos-box > * hgroup,
+.dukt-videos-box > * menu,
+.dukt-videos-box > * nav,
+.dukt-videos-box > * section {
+  display: block;
+}
+.dukt-videos-box > * body {
+  line-height: 1;
+}
+.dukt-videos-box > * ol,
+.dukt-videos-box > * ul {
+  list-style: none;
+}
+.dukt-videos-box > * blockquote,
+.dukt-videos-box > * q {
+  quotes: none;
+}
+.dukt-videos-box > * blockquote:before,
+.dukt-videos-box > * blockquote:after,
+.dukt-videos-box > * q:before,
+.dukt-videos-box > * q:after {
+  content: '';
+  content: none;
+}
+.dukt-videos-box > * table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of file reset.less */
+/* Location: ./dukt-videos-universal/resources/css/reset.less */

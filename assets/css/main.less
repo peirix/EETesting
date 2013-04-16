@@ -1,0 +1,164 @@
+@import "variables.less";
+
+* {
+	box-sizing: border-box;
+}
+
+body,html {
+	height: 100%;
+}
+
+header {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	background: #fff;
+	z-index: 99;
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		bottom: auto;
+	}
+
+	h1 {
+		position: absolute;
+		width: 10%;
+		left: 2%;
+		line-height: 25px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	nav {
+		a {
+			color: #a5a7aa;
+			padding-bottom: 3px;
+		}
+		a:hover,a:visited,a:active,a.active {
+			color: #a5a7aa;
+			text-decoration: none;
+			border-bottom: 1px solid #a5a7aa;
+		}
+
+		ul {
+			width: 100%;
+			height: 50px;
+			list-style: none;
+			text-align: center;
+			float: left;
+			margin: 0;
+
+			li {
+				display: inline-block;
+				margin: 15px 10px;
+			}
+		}
+
+		.pull-right {
+			position: absolute;
+			right: 2%;
+
+			div,a {
+				float: left;
+				margin: 15px 10px;
+
+				a {
+					margin: 0 5px;
+				}
+			}
+		}
+	}
+}
+
+#intro {
+	.fullSizeBg('../img/introbg.jpg');
+	color: #fff;
+	text-align: center;
+	padding-top: 4%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	img { width: 65px; }
+
+	h2 {
+		margin-top: 24%;
+		font-size: 3em;
+		line-height: 2em;
+	}
+}
+
+.page {
+	height: 100%;
+	top: 100%;
+	position: relative;
+	background: #fafafa;
+	border: 1px solid red;
+}
+
+#productImage {
+	position: absolute;
+	height: 80%;
+	top: 10%;
+	width: 80%;
+	left: 10%;
+	z-index: 2;
+
+	&.fixed {
+		position: fixed;
+		margin-top: 50px;
+	}
+
+	img {
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.page .content {
+	position: absolute;
+	color: @text;
+	z-index: 3;
+
+	h2 span {
+		display: block;
+	}
+
+	.buy {
+		background: @text;
+		color: #fff;
+		border: 0;
+		border-radius: 0;
+		padding: 5px 10px;
+	}
+}
+
+.p1 .content {
+	text-align: right;
+	right: 5%;
+	top: 35%;
+}
+
+.p2 .content {
+	left: 5%;
+	top: 20%;
+}
+
+.p3 .content {
+	top: 70%;
+	right: 5%;
+	text-align: right;
+}
+
+.p4 .content {
+	top: 60%;
+	left: 5%;
+}

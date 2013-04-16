@@ -1,0 +1,130 @@
+#ml_dialog p {
+	clear: both;
+	margin: 0.3em 0;
+	padding: 0;
+	line-height: normal;
+	color: #505050;
+	font-size: 12px;
+	text-align: left;
+}
+
+#ml_dialog a {
+	text-decoration: underline;
+	font-weight: normal;
+	color: #505050;
+	background: none;
+}
+
+#ml_dialog p.title {
+	font-size: 14px;
+	margin: 1.3em 0 0.7em 0;
+}
+
+#ml_dialog p.first {
+	margin: 0.7em 0 0.7em 0;
+}
+
+#ml_dialog p.subitem {
+	padding: 0 0 0 10px;
+}
+
+#ml_toggle_content {
+	margin: 0.6em 0 1em 0;
+	padding: 0;
+	display: none;
+	clear: both;
+}
+
+a#ml_trigger, a#ml_trigger:hover {
+	display: block;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	background: none;
+	z-index: 1090; /* we don't want the button appearing underneath anything - apart from fancybox */
+	border: none !important;
+}
+a#ml_trigger img {
+	display: inline;
+	height: auto;
+	width: auto;
+	border: none !important;
+	padding: 0;
+}
+
+#ml_reload_notice, #ml_gohome_notice, #ml_search_link {
+	display: none;
+}
+
+#ml_generic_markup {
+	clear: both;
+}
+
+.ml_no_scroll { /* Disable scrolling of the underlying page when the ML menu/Fancybox is active */
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+/* overrule the standard jQuery UI theme as we want to fade this in */
+.ui-widget-overlay {
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+/* Switchboard field */
+
+/* Fixes undesirable scrollbars where sites use a form display:inline reset */
+#ml_dialog form {
+	display:block;
+}
+
+#ml_search {
+	position: relative !important;
+	height: 22px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#ml_search_top {
+	display: block;
+	border-top: 1px dotted #000;
+	opacity: 0.2;
+	padding-top: 6px;
+	margin-top: 12px;
+}
+#ml_search_field {
+	width: 198px !important;
+	font-size: 11px !important;
+	font-family: "Lucida Grande", "Lucida Sans", Arial, sans-serif !important;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+	border-radius: 10px !important;
+	border: 1px solid #c5c5c5 !important;
+	padding: 4px 8px !important;
+	color: #444;
+	position: absolute !important;
+	left: 0 !important;
+	-moz-box-shadow:inset 0 0 2px #dcdcdc !important;
+	box-shadow:inset 0 0 2px #dcdcdc !important;
+}
+#ml_search_field:focus {
+	border: 1px solid #999999 !important;
+}
+#ml_search_field.ml_placeholder {
+	color: #a9a9a9;
+}
+#ml_search_field:-moz-placeholder {
+	color: #a9a9a9;
+}
+
+/*
+EE 2.1.5 and up have a slightly modified jQuery UI theme which makes the reload message look worse.
+Lets switch to the old CSS instead.
+*/
+#ml_dialog .ui-state-highlight {
+	background: #fff9b7;
+	border-color: #dfd67a;
+}

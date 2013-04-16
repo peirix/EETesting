@@ -1,0 +1,861 @@
+/**
+ * Dukt Videos
+ *
+ * @package		Dukt Videos
+ * @version		Version 1.0
+ * @author		Benjamin David
+ * @copyright	Copyright (c) 2013 - DUKT
+ * @link		http://dukt.net/videos/
+ *
+ */
+/**
+ * Dukt Videos
+ *
+ * @package		Dukt Videos
+ * @version		Version 1.0
+ * @author		Benjamin David
+ * @copyright	Copyright (c) 2013 - DUKT
+ * @link		http://dukt.net/videos/
+ *
+ */
+.dv-box > * {
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+  /* HTML5 display-role reset for older browsers */
+
+}
+.dv-box > * html,
+.dv-box > * body,
+.dv-box > * div,
+.dv-box > * span,
+.dv-box > * applet,
+.dv-box > * object,
+.dv-box > * iframe,
+.dv-box > * h1,
+.dv-box > * h2,
+.dv-box > * h3,
+.dv-box > * h4,
+.dv-box > * h5,
+.dv-box > * h6,
+.dv-box > * p,
+.dv-box > * blockquote,
+.dv-box > * pre,
+.dv-box > * a,
+.dv-box > * abbr,
+.dv-box > * acronym,
+.dv-box > * address,
+.dv-box > * big,
+.dv-box > * cite,
+.dv-box > * code,
+.dv-box > * del,
+.dv-box > * dfn,
+.dv-box > * em,
+.dv-box > * img,
+.dv-box > * ins,
+.dv-box > * kbd,
+.dv-box > * q,
+.dv-box > * s,
+.dv-box > * samp,
+.dv-box > * small,
+.dv-box > * strike,
+.dv-box > * strong,
+.dv-box > * sub,
+.dv-box > * sup,
+.dv-box > * tt,
+.dv-box > * var,
+.dv-box > * b,
+.dv-box > * u,
+.dv-box > * i,
+.dv-box > * center,
+.dv-box > * dl,
+.dv-box > * dt,
+.dv-box > * dd,
+.dv-box > * ol,
+.dv-box > * ul,
+.dv-box > * li,
+.dv-box > * fieldset,
+.dv-box > * form,
+.dv-box > * label,
+.dv-box > * legend,
+.dv-box > * table,
+.dv-box > * caption,
+.dv-box > * tbody,
+.dv-box > * tfoot,
+.dv-box > * thead,
+.dv-box > * tr,
+.dv-box > * th,
+.dv-box > * td,
+.dv-box > * article,
+.dv-box > * aside,
+.dv-box > * canvas,
+.dv-box > * details,
+.dv-box > * embed,
+.dv-box > * figure,
+.dv-box > * figcaption,
+.dv-box > * footer,
+.dv-box > * header,
+.dv-box > * hgroup,
+.dv-box > * menu,
+.dv-box > * nav,
+.dv-box > * output,
+.dv-box > * ruby,
+.dv-box > * section,
+.dv-box > * summary,
+.dv-box > * time,
+.dv-box > * mark,
+.dv-box > * audio,
+.dv-box > * video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.dv-box > * article,
+.dv-box > * aside,
+.dv-box > * details,
+.dv-box > * figcaption,
+.dv-box > * figure,
+.dv-box > * footer,
+.dv-box > * header,
+.dv-box > * hgroup,
+.dv-box > * menu,
+.dv-box > * nav,
+.dv-box > * section {
+  display: block;
+}
+.dv-box > * body {
+  line-height: 1;
+}
+.dv-box > * ol,
+.dv-box > * ul {
+  list-style: none;
+}
+.dv-box > * blockquote,
+.dv-box > * q {
+  quotes: none;
+}
+.dv-box > * blockquote:before,
+.dv-box > * blockquote:after,
+.dv-box > * q:before,
+.dv-box > * q:after {
+  content: '';
+  content: none;
+}
+.dv-box > * table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* End of file reset.less */
+/* Location: ./dukt-videos-universal/resources/css/reset.less *//* BOX */
+div.dv-box {
+  font-size: 12px;
+  line-height: 1.2em;
+  font-family: Arial;
+  min-height: 410px;
+  min-width: 700px;
+  background: #333;
+  -webkit-box-shadow: 0px 0px 10px 0px #222;
+  box-shadow: 0px 0px 10px 0px #222;
+}
+div.dv-box .dv-splitter-white-top {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-white.png") top left repeat-x;
+}
+div.dv-box .dv-splitter-white-bottom {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-white.png") bottom left repeat-x;
+}
+div.dv-box .dv-splitter-black-top {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-black.png") repeat-x top left;
+}
+div.dv-box .dv-splitter-black-bottom {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-black.png") repeat-x bottom left;
+}
+div.dv-box .dv-splitter-white-left {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-white.png") top left repeat-y;
+}
+div.dv-box .dv-splitter-white-right {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-white.png") bottom right repeat-y;
+}
+div.dv-box .dv-splitter-black-left {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-black.png") repeat-y top left;
+}
+div.dv-box .dv-splitter-black-right {
+  display: block;
+  height: 41px;
+  width: 100%;
+  background: url("../images/splitter-black.png") repeat-y bottom right;
+}
+div.dv-box div.dv-box-in {
+  display: block;
+  height: 568px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  /* COLUMNS */
+
+  /* COLUMN ACCOUNTS */
+
+  /* COLUMN LISTINGS */
+
+  /* -------------------------------------------------------------------- */
+
+  /* COLUMN PREVIEW */
+
+}
+div.dv-box div.dv-box-in div.dv-col {
+  position: relative;
+}
+div.dv-box div.dv-box-in div.dv-col .dv-top,
+div.dv-box div.dv-box-in div.dv-col .dv-bottom {
+  height: 41px;
+}
+div.dv-box div.dv-box-in div.dv-col div.dv-top {
+  /* 				border-bottom: 1px solid #8296A1; */
+
+  /* kuler */
+
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(#d7dfe4 0%, #b9c6cd 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, color-stop(0, #d7dfe4), color-stop(1, #b9c6cd));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(#d7dfe4 0%, #b9c6cd 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(#d7dfe4 0%, #b9c6cd 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(#d7dfe4 0%, #b9c6cd 100%);
+  background-image: linear-gradient(#d7dfe4 0%, #b9c6cd 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd7dfe4,endColorstr=#ffb9c6cd)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffd7dfe4,endColorstr=#ffb9c6cd);
+  /* /kuler */
+
+}
+div.dv-box div.dv-box-in div.dv-col .dv-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(#abb7c3 0%, #93a6b1 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, color-stop(0, #abb7c3), color-stop(1, #93a6b1));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(#abb7c3 0%, #93a6b1 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(#abb7c3 0%, #93a6b1 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(#abb7c3 0%, #93a6b1 100%);
+  background-image: linear-gradient(#abb7c3 0%, #93a6b1 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffabb7c3,endColorstr=#ff93a6b1)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffabb7c3,endColorstr=#ff93a6b1);
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts {
+  background: #333;
+  width: 80px;
+  float: left;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-top .dv-close {
+  display: block;
+  line-height: 1em;
+  height: 41px;
+  background: url("../images/close.png") center center no-repeat;
+  text-indent: -3000px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-top .dv-close:hover {
+  text-decoration: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services {
+  border-bottom: 1px solid #444;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service > a {
+  background: no-repeat center center;
+  display: block;
+  height: 61px;
+  text-indent: -3000px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #222;
+  padding: 10px 0;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service.vimeo > a {
+  background-image: url("../images/vimeo.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service.youtube > a {
+  background-image: url("../images/youtube.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a {
+  font-size: 0.9em;
+  text-align: center;
+  color: #aaa;
+  background: no-repeat 28px 8px;
+  padding-top: 33px;
+  padding-bottom: 8px;
+  display: block;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #222;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.dv-search {
+  background-image: url("../images/service-actions/search.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.dv-my-videos {
+  background-image: url("../images/service-actions/my-videos.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.dv-favorites {
+  background-image: url("../images/service-actions/favorites.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a:hover {
+  background-color: #3a3a3a;
+  text-decoration: none;
+  cursor: pointer;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.selected {
+  background-color: #222;
+  border-top: 1px solid #222;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.selected.dv-search {
+  background-image: url("../images/service-actions/search-active.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.selected.dv-my-videos {
+  background-image: url("../images/service-actions/my-videos-active.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts ul.dv-services li.dv-service ul.dv-actions li a.selected.dv-favorites {
+  background-image: url("../images/service-actions/favorites-active.png");
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom a.dv-btn-manage {
+  position: absolute;
+  top: -50px;
+  left: 22px;
+  display: block;
+  background: url("../images/cog-white.png") no-repeat center center;
+  height: 30px;
+  width: 30px;
+  text-indent: -3000px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom .dv-status {
+  position: absolute;
+  top: 4px;
+  left: 22px;
+  z-index: 999999999999999999999999999999999;
+  height: 30px;
+  width: 30px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom .dv-status div.dv-spin {
+  display: none;
+  height: 0px;
+  width: 0px;
+  position: relative;
+  left: -1px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom .dv-status div.dv-reload {
+  display: block;
+  background: url("../images/reload.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom .dv-status.dv-loading div.dv-reload {
+  display: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-accounts .dv-bottom .dv-status.dv-loading div.dv-spin {
+  display: block;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings {
+  width: 320px;
+  float: left;
+  position: relative;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-search {
+  padding: 8px 10px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-search input {
+  width: 96%;
+  padding: 0.3em;
+  opacity: .9;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-search input:focus {
+  background: #fff;
+  border-width: 1px;
+  opacity: 1;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-search .dv-spin {
+  display: none;
+  position: absolute;
+  top: 11px;
+  right: 34px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-search.dv-loading .dv-spin {
+  display: block;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-top .dv-title {
+  text-align: center;
+  padding: 12px;
+  color: #698491;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #ffffff;
+  font-size: 1.2em;
+  margin: 0;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos {
+  background: #ECF1F4;
+  position: absolute;
+  top: 41px;
+  left: 0px;
+  width: 319px;
+  float: left;
+  height: 100%;
+  overflow: auto;
+  border-right: 1px solid #8295A1;
+  z-index: 1;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #BDC9D0;
+  padding: 1em;
+  background: #ECF1F4;
+  overflow: hidden;
+  /* thumbs with vertical and horizontal align */
+
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li:hover {
+  cursor: default;
+  background: #F9FAFB;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li.selected {
+  border-top: 1px solid #D1DAE0;
+  background: #e3eaee url("../images/videos-selected.png") repeat-x top left;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-text {
+  margin-left: 140px;
+  margin-top: 5px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-text strong {
+  display: block;
+  line-height: 1.4em;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-text small {
+  color: #777;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb {
+  float: left;
+  padding: 4px;
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 120px;
+  height: 68px;
+  border-color: #8296a1;
+  border-width: 1px;
+  /* Firefox v1.0+ */
+
+  -moz-border-radius: 1%;
+  -webkit-border-radius: 0%;
+  /* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+
+  border-radius: 0%;
+  border-style: solid;
+  /* Firefox v3.5+ */
+
+  -moz-box-shadow: 0px 1px 0px #ffffff;
+  /* Safari v3.0+ and by Chrome v0.2+ */
+
+  -webkit-box-shadow: 0px 1px 0px #ffffff;
+  /* Firefox v4.0+ , Safari v5.1+ , Chrome v10.0+, IE v10+ and by Opera v10.5+ */
+
+  box-shadow: 0px 1px 0px #ffffff;
+  display: inline-block;
+  position: relative;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb .dv-clip-outer {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 68px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb .dv-clip-outer .dv-clip {
+  display: block;
+  position: absolute;
+  bottom: -100px;
+  top: -100px;
+  left: -100px;
+  right: -100px;
+  text-align: center;
+  white-space: nowrap;
+  word-break: normal;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  background: transparent;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb .dv-clip-outer .dv-clip .dv-clip-inner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb .dv-clip-outer .dv-clip .dv-clip-inner img {
+  width: 122px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos ul li div.dv-videos-thumb .dv-clip-outer .dv-clip .dv-clip-inner .dv-vertical-align {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos .dv-videos-empty {
+  position: absolute;
+  text-align: center;
+  font-size: 1.2em;
+  text-indent: -3000px;
+  color: #798791;
+  border: 1px dashed #ccc;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dukt-videos-videos-error {
+  position: absolute;
+  top: 190px;
+  text-align: center;
+  width: 92%;
+  padding: 0 4%;
+  font-size: 1.2em;
+  color: #798791;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dukt-videos-videos-error-code {
+  overflow: scroll;
+  width: 84%;
+  height: 100px;
+  padding: 10px 4%;
+  margin: 10px 4%;
+  background: #fff;
+  font-size: 0.8em;
+  border: 1px solid #aaa;
+  text-align: left;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos-more {
+  text-align: center;
+  padding: 30px 0 !important;
+  color: #666;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings span.dv-videos-more-loading {
+  background: url("../images/loader.gif") no-repeat left center;
+  padding-left: 30px;
+  display: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings .dv-videos-more-btn {
+  text-decoration: underline;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-listings > div:first-child {
+  display: block;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview {
+  background: #2B3438;
+  margin-left: 400px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview div.dv-spin {
+  display: none;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+  z-index: 100000;
+  background: red;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview.dv-frame-loading div.dv-spin {
+  display: block;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview.dv-frame-loading .dv-preview-inject {
+  display: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject {
+  height: 484px;
+  /* Description */
+
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  width: 75px;
+  /* favorite */
+
+  /* fullscreen */
+
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls .dv-splitter-light-top {
+  float: right;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls a.dv-preview-favorite {
+  background: url("../images/fav.png") no-repeat;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-indent: -3000px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls a.dv-preview-favorite:active {
+  background-position: top right;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls a.dv-preview-favorite-selected {
+  background-position: top right;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls a.dv-preview-favorite-selected:hover {
+  background-position: top right;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-controls a.dv-preview-fullscreen {
+  background: url("../images/fullscreen-btn.png") no-repeat;
+  display: none;
+  width: 21px;
+  height: 17px;
+  text-indent: -3000px;
+  float: right;
+  margin-top: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-fullscreen a.dv-preview-fullscreen {
+  background-position: 0 -17px;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-preview-video {
+  background: #000;
+  border-bottom: 1px solid #8595A0;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-preview-video iframe {
+  width: 100%;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject div.dv-preview-description {
+  height: 184px;
+  overflow: auto;
+  color: #333;
+  background: #ECF1F4;
+  border-top: 1px solid #ffffff;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject div.dv-preview-description a {
+  color: #333;
+  text-decoration: underline;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject div.dv-preview-description a:hover {
+  text-decoration: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject div.dv-preview-description div.dv-preview-description-in {
+  padding: 20px;
+  line-height: 1.4em;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-preview-inject .dv-preview-description-empty {
+  color: #aaa;
+  font-style: italic;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-bottom .dv-controls {
+  padding-top: 7px;
+  padding-right: 10px;
+  float: right;
+  display: none;
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-bottom .dv-controls a.dv-btn {
+  float: right;
+  display: block;
+  background: #e23d51;
+  padding: 5px 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #942836;
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(34% 20% -90deg, #f72a58 0%, #d0084a 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, 34% 20%, 34% 100%, color-stop(0, #f72a58), color-stop(1, #d0084a));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(-90deg, #f72a58 0%, #d0084a 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(-90deg, #f72a58 0%, #d0084a 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(-90deg, #f72a58 0%, #d0084a 100%);
+  background-image: linear-gradient(-90deg, #f72a58 0%, #d0084a 100%);
+  border-color: #7e022b;
+  border-width: 1px;
+  /* Firefox v1.0+ */
+
+  -moz-border-radius: 6px ;
+  /* Safari v3.0+ and by Chrome v0.2+ */
+
+  -webkit-border-radius: 6px ;
+  /* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+
+  border-radius: 6px ;
+  border-style: solid;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff72a58,endColorstr=#ffd0084a,GradientType=0)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#fff72a58,endColorstr=#ffd0084a,GradientType=0);
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-bottom .dv-controls a.dv-btn:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(34% 20% -90deg, #e26b7c 0%, #c44058 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, 34% 20%, 34% 100%, color-stop(0, #e26b7c), color-stop(1, #c44058));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(-90deg, #e26b7c 0%, #c44058 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(-90deg, #e26b7c 0%, #c44058 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(-90deg, #e26b7c 0%, #c44058 100%);
+  background-image: linear-gradient(-90deg, #e26b7c 0%, #c44058 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe26b7c,endColorstr=#ffc44058,GradientType=0)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffe26b7c,endColorstr=#ffc44058,GradientType=0);
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-bottom .dv-controls a.dv-btn.dv-cancel {
+  color: #333;
+  background-color: #a8b9c2;
+  border: 1px solid #6a757b;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(50% 20% -90deg, #dfe6ea 0%, #a5b3be 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, 50% 20%, 50% 100%, color-stop(0, #dfe6ea), color-stop(1, #a5b3be));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(-90deg, #dfe6ea 0%, #a5b3be 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(-90deg, #dfe6ea 0%, #a5b3be 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(-90deg, #dfe6ea 0%, #a5b3be 100%);
+  background-image: linear-gradient(-90deg, #dfe6ea 0%, #a5b3be 100%);
+  border-color: #62717a;
+  border-width: 1px;
+  /* Firefox v1.0+ */
+
+  /* Safari v3.0+ and by Chrome v0.2+ */
+
+  /* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+
+  border-style: solid;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdfe6ea,endColorstr=#ffa5b3be,GradientType=0)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffdfe6ea,endColorstr=#ffa5b3be,GradientType=0);
+}
+div.dv-box div.dv-box-in div.dv-col.dv-preview .dv-bottom .dv-controls a.dv-btn:hover.dv-cancel {
+  color: #333;
+  /* Firefox v3.6+ */
+
+  background-image: -moz-linear-gradient(50% 20% -90deg, #eff2f4 0%, #c9cfd6 100%);
+  /* safari v4.0+ and by Chrome v3.0+ */
+
+  background-image: -webkit-gradient(linear, 50% 20%, 50% 100%, color-stop(0, #eff2f4), color-stop(1, #c9cfd6));
+  /* Chrome v10.0+ and by safari nightly build*/
+
+  background-image: -webkit-linear-gradient(-90deg, #eff2f4 0%, #c9cfd6 100%);
+  /* Opera v11.10+ */
+
+  background-image: -o-linear-gradient(-90deg, #eff2f4 0%, #c9cfd6 100%);
+  /* IE v10+ */
+
+  background-image: -ms-linear-gradient(-90deg, #eff2f4 0%, #c9cfd6 100%);
+  background-image: linear-gradient(-90deg, #eff2f4 0%, #c9cfd6 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffeff2f4,endColorstr=#ffc9cfd6,GradientType=0)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffeff2f4,endColorstr=#ffc9cfd6,GradientType=0);
+}
+/* THE OVERLAY */
+.dv-overlay {
+  display: none;
+  background: #000;
+  -moz-opacity: 0.50;
+  opacity: .50;
+  filter: alpha(opacity=50);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+}
+.dv-overlay .spin {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+div.dv-overlay-loading {
+  background: url("../images/loader.gif") no-repeat center center rgba(17, 17, 17, 0.71);
+}
+/* End of file box.less */
+/* Location: ./dukt-videos-universal/resources/css/box.less */

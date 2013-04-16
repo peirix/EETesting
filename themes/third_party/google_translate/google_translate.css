@@ -1,0 +1,38 @@
+#google_translate_from,
+#google_translate_to {
+	width: 550px;
+	height: 150px;
+}
+
+#google_translate_to {
+	width:300px;
+}
+
+#google_translate_from_wrap {
+	position: relative;
+}
+
+#google_translate_controls {
+	position: absolute;
+	top:-36px;
+	left:0;
+}
+#google_translate_controls select {
+	margin-bottom: 10px;
+}
+
+#google_translate_powered {
+	margin-top: 10px;
+}
+
+#google_translate_powered img {
+	float: left;
+	margin-right: 3px;
+}
+
+
+#google_translate_powered strong {
+	font-weight: normal;
+	display: block;
+	padding-top: 5px;
+}
