@@ -72,7 +72,7 @@ $(function() {
 		}
 
 		//story
-		var diff = scrollTop - height + 100;
+		/*var diff = scrollTop - height + 100;
 		if (scrollTop + height >= s4Top - 100) {
 			$stImg1.css("display", "");
 			$stImg2.css("display", "");
@@ -101,7 +101,7 @@ $(function() {
 			$stImg4.css("display", "");
 			$stImg1.css("height", s1Top - diff);
 			$("header nav li a").removeClass("active").eq(0).addClass("active");
-		}
+		}*/
 
 		//contact
 		if (scrollTop >= s4Top) {
